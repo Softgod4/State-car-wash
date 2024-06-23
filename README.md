@@ -1,6 +1,6 @@
 # Государственная Автомойка
 
-![image](https://github.com/Softgod4/State-car-wash/assets/55946703/7bb97357-55e4-4ca1-903f-1226d34150c6)
+![image](img/readme-img.png)
 
 ## Описание проекта
 
