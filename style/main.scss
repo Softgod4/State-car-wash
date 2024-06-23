@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'mixins', 'media', 'global', 'buttons';
+
+#navbar {
+    .navbar-main {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+
+#main {
+
+    #home {
+        .home-pictures {
+            margin: 12px;
+            padding: 12px;
+            border-radius: 12px;
+            background: white;
+            transition: all 0.5s;
+            width: 100%;
+            height: auto;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            &:hover {
+                box-shadow: none;
+            }
+
+            img {
+                border-radius: 12px;
+            }
+        }
+    }
+
+    .price-block {
+        background: linear-gradient(52deg, rgba(255,0,0,1) 0%, rgba(240,57,57,1) 100%);
+    }
+}
+
+.swiper {
+    width: 720px;
+    height: auto;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: auto !important;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+.main_gradient {
+    background: linear-gradient(182.54deg, #1F50E8 20.95%, #7996F0 134.42%);
+    @include background();
+}

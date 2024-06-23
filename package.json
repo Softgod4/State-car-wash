@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "serve": "^14.2.3"
+  },
+  "name": "state-car-wash",
+  "version": "1.0.0",
+  "main": "js/main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx serve"
+  },
+  "author": "Softgod",
+  "license": "ISC",
+  "description": ""
+}

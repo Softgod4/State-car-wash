@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/main.css">
+    <script src="../js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <title>Государственная автомойка</title>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header class="header">
+    <nav id="navbar" class="fixed w-full z-20 top-0 start-0 border-b flex justify-center">
+      <div class="bg-white navbar-main flex flex-wrap items-center justify-between lg:justify-between sm:p-4 p-2 w-full lg:m-4 m-0 lg:rounded-xl rounded-none">
+        <a href="localhost:3000" class="flex items-center space-x-3 rtl:space-x-reverse w-50">
+          <img src="../img/logo-2.png" class="w-[59px] h-[59px]" alt="Flowbite Logo">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap"><span class="text-red-500">Гос</span>-автомойка</span>
+        </a>
+        <div class="flex justify-center items-center xl:order-2 space-x-3 xl:space-x-0 rtl:space-x-reverse">
+          <button type="button" class="button-main md:flex hidden text-nowrap mr-2"><a href="#main">Заказать звонок</a></button>
+          <button id="burger-button" type="button" class="inline-flex items-center ml-4 mr-4 p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:ring-gray-200 transition-all" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="/img/logo.png" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+          </button>
+        </div>
+        <div id="navbar-sticky" class="hidden items-center justify-between w-full xl:flex xl:w-auto xl:order-1">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-semibold border border-gray-100 rounded-lg bg-gray-50 xl:space-x-8 rtl:space-x-reverse xl:flex-row xl:mt-1 xl:border-0 xl:bg-white">
+            <li><a href="#main" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-500 transition-all text-lg" aria-current="page">Главная</a></li>
+            <li><a href="#swiper" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-500 transition-all text-lg">Преимущества</a></li>
+            <li><a href="#about-us" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-500 transition-all text-lg">О нас</a></li>
+            <li><a href="#price" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-500 transition-all text-lg">Цены</a></li>
+            <li><a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-500 transition-all text-lg">Telegram</a></li>
+            <li><a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-500 transition-all text-lg">Whatsapp</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- основная часть сайта -->
+  <main id="main">
+
+    <section id="home" class="container-main h-auto">
+      <div class="bg-[#903AB0] text-white p-4 w-full rounded-xl xl:mt-36 mt-28 ">
+        <p>Весна пришла! Пора ухаживать <span class="font-bold">не только за девушками, но и за автомобилями</span> 💐 Специально для Вас мы гарантируем лучшие цены на рынке детейлинга!</p>
+      </div>
+      <div class="flex xl:justify-between xl:items-start xl:flex-row justify-start items-center flex-col mt-4">
+        <article class="home-maintain xl:w-1/2 w-full bg-red-500 rounded-lg shadow-2xl p-8 h-auto xl:m-6 border-4 border-solid border-[#e5e7eb] shadow-xl">
+          <h1 class="sm:text-6xl text-4xl pb-4 text-white font-bold">Чистый автомобиль – гарантия вашей безопасности!</h1>
+          <p class="text-[#e5e7eb] rounded font-medium sm:text-xl text-sm">Добро пожаловать в нашу государственную автомойку! Мы предлагаем качественные услуги по мойке и чистке вашего автомобиля, используя современные технологии и экологически чистые средства. Наши специалисты обеспечат вашему автомобилю безупречный вид и сохранность покрытия.</p>
+          <form class="flex mt-8" action="">
+            <input type="text" class="h-12 rounded-l-md focus:none font-medium font-sm pl-4 outline-none border-4	border-white" type="tel" autocomplete="on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 (999) 123 12 32">
+            <button type="sumbit" class="bg-white h-12 text-gray-900 focus:none font-medium text-sm text-center inline-flex items-center sm:p-4 p-0 rounded-r-md outline-none sm:border-4 border-0 border-white sm:bg-transparent bg-red-500">
+              <!-- <img src="../img/phone-call.png" alt="" class="w-[21px] h-[21px] mr-2"> -->
+
+              <!-- <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
+                <path d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z"/>
+              </svg> -->
+
+              <p class="text-white bg-red-500 sm:p-1.5 p-1 sm:rounded-lg rounded" id="call">Заказать звонок</p>
+            </button>
+          </form>
+        </article>
+
+        <div class="swiper cube-slider xl:w-1/2 w-full m-6 rounded-lg h-[420px] flex flex-col" id="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../img/caurosel/caurosel-1.jpg" class="h-full rounded-lg"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/caurosel/caurosel-2.jpg" class="h-full rounded-lg"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/caurosel/caurosel-3.jpg" class="h-full rounded-lg"/>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container-main">
+        <div class="about-us__blocks flex justify-center align-center pt-8 pb-8 xl:flex-row flex-col">
+          <div class="w-auto h-auto rounded-lg shadow-xl bg-slate-50 border-2 border-solid border-[#e5e7eb] p-4 mx-4 xl:my-0 my-6">
+            <img src="https://gu-st.ru/content/Icons/decide_together_app_blu_digitale.svg" class="icon w-10 h-10" aria-hidden="true">
+            <h3 class="bold mt-4 mb-2">Отличный рейтинг</h3>
+            <p class="text-[#66727f]">Наши клиенты всегда довольны качеством обслуживания, что подтверждает высокий рейтинг нашей автомойки.</p>
+          </div>
+          <div class="w-auto h-auto rounded-lg shadow-xl bg-slate-50 border-2 border-solid border-[#e5e7eb] p-4 mx-4 xl:my-0 my-6">
+            <img src="https://gu-st.ru/content/Icons/decide_together_app_blu_digitale.svg" class="icon w-10 h-10" aria-hidden="true">
+            <h3 class="bold mt-4 mb-2">Современное оборудование</h3>
+            <p class="text-[#66727f]">Мы используем только самое современное оборудование, чтобы обеспечить ваш автомобиль лучшим уходом.</p>
+          </div>
+          <div class="w-auto h-auto rounded-lg shadow-xl bg-slate-50 border-2 border-solid border-[#e5e7eb] p-4 mx-4 xl:my-0 my-6">
+            <img src="https://gu-st.ru/content/Icons/decide_together_app_blu_digitale.svg" class="icon w-10 h-10" aria-hidden="true">
+            <h3 class="bold mt-4 mb-2">Экологичные моющие средства</h3>
+            <p class="text-[#66727f]">Мы заботимся об окружающей среде и используем только экологически чистые моющие средства.</p>
+          </div>
+          <div class="w-auto h-auto rounded-lg shadow-xl bg-slate-50 border-2 border-solid border-[#e5e7eb] p-4 mx-4 xl:my-0 my-6">
+            <img src="https://gu-st.ru/content/Icons/decide_together_app_blu_digitale.svg" class="icon w-10 h-10" aria-hidden="true">
+            <h3 class="bold mt-4 mb-2">Профессиональный персонал</h3>
+            <p class="text-[#66727f]">Наши сотрудники - настоящие профессионалы, которые любят свою работу и всегда рады помочь.</p>
+          </div>
+          <div class="w-auto h-auto rounded-lg shadow-xl bg-slate-50 border-2 border-solid border-[#e5e7eb] p-4 mx-4 xl:my-0 my-6">
+            <img src="https://gu-st.ru/content/Icons/decide_together_app_blu_digitale.svg" class="icon w-10 h-10" aria-hidden="true">
+            <h3 class="bold mt-4 mb-2">Доступные цены</h3>
+            <p class="text-[#66727f]">Мы предлагаем лучшие цены на все наши услуги, чтобы каждый мог позволить себе качественную автомойку.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-us" class="h-auto">
+      <div class="container-main">        
+        <div class='p-6 flex lg:flex-row-reverse flex-col lg:justify-between justify-start lg:align-center align-center'>
+          <article class="about-us__text lg:w-1/2 w-full">
+            <h2 class="sm:text-5xl text-2xl pb-6 text-red-500 font-bold mb-2">Государственная Автомойка: <br/>Надежность и Качество для Вашего Автомобиля!</h2>
+            <p class="text-[#66727f] pb-6"><strong>Государственная автомойка</strong> — это место, где ваш автомобиль получает профессиональный уход и обслуживание. Наши услуги разработаны с учетом высоких стандартов качества и надежности, чтобы обеспечить вашим транспортным средствам чистоту, блеск и долговечность. Мы гордимся тем, что предоставляем нашим клиентам исключительный сервис и гарантируем, что их автомобили будут выглядеть как новые после каждого визита к нам.</p>
+            <p class="text-[#66727f] pt-6"><strong>Наша команда</strong> состоит из опытных специалистов, которые используют только современные технологии и высококачественные материалы для мойки и ухода за автомобилями. Мы стремимся сделать каждое посещение нашей автомойки максимально комфортным и удобным для вас. Наши услуги включают в себя не только стандартную мойку, но и специализированные процедуры, такие как полировка, нанесение защитных покрытий и уход за салоном автомобиля. Мы ценим ваше время и предлагаем быструю и эффективную работу, чтобы вы могли как можно скорее вернуться к своим делам.</p>
+          </article>
+          <div class="about-us__video lg:w-1/2 w-full h-full lg:m-4 m-0 lg:mt-0 mt-8 flex justify-center items-center">
+            <video loop muted autoplay class="rounded-xl w-full lg:w-[600px] lg:h-[500px] object-cover shadow-2xl">
+              <source src="../img/Техническая мойка.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <section id="price">
+      <div class="container-small">
+        <h2 class="sm:text-5xl text-2xl pb-2 text-red-500 font-bold">Цены и тарифы</h2>
+        <p class="text-[#66727f] text-xl pb-6">Цены и программы могут отличаться в зависимости от местоположения автомойки</p>
+
+        <div class="price-blocks flex align-center pt-8 pb-8 flex-row overflow-x-auto flex-nowrap">
+
+          <div class="price-block__item shadow-xl h-full border-2 border-solid border-[#e5e7eb] p-6 rounded-lg w-72 mx-2">
+            <div class="flex justify-start items-center">
+              <img src="../img/price1.png" alt="price" class="w-[42px] h-[42px] mr-4">
+              <div class="flex flex-col items-start">
+                <h3 class="text-xl"><strong>Техническая</strong></h3>
+                <p class="text-[#66727f]">(в дождь и слякоть)</p>
+              </div>
+            </div>
+            <p class="bg-red-500 text-white rounded-lg opacity-75 text-center my-6">3 минуты</p>
+            <div class="flex flex-col justify-center align-center">
+              <article class="flex justify-start opacity-50 my-2">
+                <img src="https://static.tildacdn.com/tild3061-3432-4637-b630-373932346562/Frame_46.svg" alt="">
+                <p class="ml-4 text-[#66727f]">Мойка днища</p>
+              </article>
+              <article class="flex justify-start opacity-50 my-2">
+                <img src="https://static.tildacdn.com/tild3061-3432-4637-b630-373932346562/Frame_46.svg" alt="">
+                <p class="ml-4 text-[#66727f]">Мойка дисков</p>
+              </article>
+              <article class="flex justify-start opacity-50 my-2">
+                <img src="https://static.tildacdn.com/tild3061-3432-4637-b630-373932346562/Frame_46.svg" alt="">
+                <p class="ml-4 text-[#66727f]">Ополаскивание</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Шампунь</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Смыв водой</p>
+              </article>
+              <article class="flex justify-start opacity-50 my-2">
+                <img src="https://static.tildacdn.com/tild3061-3432-4637-b630-373932346562/Frame_46.svg" alt="">
+                <p class="ml-4 text-[#66727f]">Обдув</p>
+              </article>
+            </div>
+            <div class="flex text-center items-center justify-center mt-6 text-nowrap">
+              <p class="text-2xl">от <strong class="text-3xl">200 &#8381;</strong></p>
+              <article class="py-2 px-4 opacity-75 bg-red-500 flex flex-col text-white rounded-md ml-4 text-start">
+                <p>🔥 165 &#8381;</p>
+                <p class="text-xs">с 00:00 до 06:00</p>
+              </article>
+            </div>
+          </div>
+  
+          <div class="price-block__item shadow-xl h-full border-2 border-solid border-[#e5e7eb] p-6 rounded-lg w-72 mx-2">
+            <div class="flex justify-start items-center">
+              <img src="../img/price2.png" alt="price" class="w-[42px] h-[42px] mr-4">
+              <div class="flex flex-col items-start">
+                <h3 class="text-xl"><strong>Экспресс</strong></h3>
+                <p class="text-[#66727f]">(без обдува)</p>
+              </div>
+            </div>
+            <p class="bg-red-500 text-white rounded-lg opacity-75 text-center my-6">5 минут</p>
+            <div class="flex flex-col justify-center align-center">
+              <article class="flex justify-start opacity-50 my-2">
+                <img src="https://static.tildacdn.com/tild3061-3432-4637-b630-373932346562/Frame_46.svg" alt="">
+                <p class="ml-4 text-[#66727f]">Мойка днища</p>
+              </article>
+              <article class="flex justify-start opacity-50 my-2">
+                <img src="https://static.tildacdn.com/tild3061-3432-4637-b630-373932346562/Frame_46.svg" alt="">
+                <p class="ml-4 text-[#66727f]">Мойка дисков</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Ополаскивание</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Шампунь</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Смыв водой</p>
+              </article>
+              <article class="flex justify-start opacity-50 my-2">
+                <img src="https://static.tildacdn.com/tild3061-3432-4637-b630-373932346562/Frame_46.svg" alt="">
+                <p class="ml-4 text-[#66727f]">Обдув</p>
+              </article>
+            </div>
+            <div class="flex text-center items-center justify-center mt-6 text-nowrap">
+              <p class="text-2xl">от <strong class="text-3xl">350 &#8381;</strong></p>
+              <article class="py-2 px-4 opacity-75 bg-red-500 flex flex-col text-white rounded-md ml-4 text-start">
+                <p>🔥 310 &#8381;</p>
+                <p class="text-xs">с 00:00 до 06:00</p>
+              </article>
+            </div>
+          </div>
+  
+          <div class="price-block__item shadow-xl h-auto border-4 border-solid border-[#FC4846] p-6 rounded-lg w-80 mx-4">
+            <div class="flex justify-start items-center">
+              <img src="../img/price3.png" alt="price" class="w-[42px] h-[42px] mr-4">
+              <div class="flex flex-col items-start">
+                <h3 class="text-xl"><strong>Полная чистка</strong></h3>
+                <p class="text-[#66727f]">(лучший тариф)</p>
+              </div>
+            </div>
+            <p class="bg-red-500 text-white rounded-lg opacity-75 text-center my-6">30 минут</p>
+            <div class="flex flex-col justify-center align-center">
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Мойка днища</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Мойка дисков</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Ополаскивание</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Шампунь</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Смыв водой</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Обдув</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Салон</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Бесплатное кофе</p>
+              </article>
+            </div>
+            <div class="flex text-center items-center justify-center mt-6 text-nowrap">
+              <p class="text-2xl">от <strong class="text-3xl">1250 &#8381;</strong></p>
+              <article class="py-2 px-4 opacity-75 bg-red-500 flex flex-col text-white rounded-md ml-4 text-start">
+                <p>🔥 1100 &#8381;</p>
+                <p class="text-xs">с 00:00 до 06:00</p>
+              </article>
+            </div>
+          </div>
+  
+          <div class="price-block__item shadow-xl h-full border-2 border-solid border-[#e5e7eb] p-6 rounded-lg w-72 mx-2">
+            <div class="flex justify-start items-center">
+              <img src="../img/price4.png" alt="price" class="w-[42px] h-[42px] mr-4">
+              <div class="flex flex-col items-start">
+                <h3 class="text-xl"><strong>Стандартная</strong></h3>
+                <p class="text-[#66727f]">(чистая машина)</p>
+              </div>
+            </div>
+            <p class="bg-red-500 text-white rounded-lg opacity-75 text-center my-6">15 минут</p>
+            <div class="flex flex-col justify-center align-center">
+              <article class="flex justify-start opacity-50 my-2">
+                <img src="https://static.tildacdn.com/tild3061-3432-4637-b630-373932346562/Frame_46.svg" alt="">
+                <p class="ml-4 text-[#66727f]">Мойка днища</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Мойка дисков</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Ополаскивание</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Шампунь</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Смыв водой</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Обдув</p>
+              </article>
+            </div>
+            <div class="flex text-center items-center justify-center mt-6 text-nowrap">
+              <p class="text-2xl">от <strong class="text-3xl">650 &#8381;</strong></p>
+              <article class="py-2 px-4 opacity-75 bg-red-500 flex flex-col text-white rounded-md ml-4 text-start">
+                <p>🔥 550 &#8381;</p>
+                <p class="text-xs">с 00:00 до 06:00</p>
+              </article>
+            </div>
+          </div>
+  
+          <div class="price-block__item shadow-xl h-full border-2 border-solid border-[#e5e7eb] p-6 rounded-lg w-72 mx-2">
+            <div class="flex justify-start items-center">
+              <img src="../img/price2.png" alt="price" class="w-[42px] h-[42px] mr-4">
+              <div class="flex flex-col items-start">
+                <h3 class="text-xl"><strong>Чистка низа</strong></h3>
+                <p class="text-[#66727f]">(от дисков до салона)</p>
+              </div>
+            </div>
+            <p class="bg-red-500 text-white rounded-lg opacity-75 text-center my-6">20 минут</p>
+            <div class="flex flex-col justify-center align-center">
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Мойка днища</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Мойка дисков</p>
+              </article>
+              <article class="flex justify-start opacity-50 my-2">
+                <img src="https://static.tildacdn.com/tild3061-3432-4637-b630-373932346562/Frame_46.svg" alt="">
+                <p class="ml-4 text-[#66727f]">Ополаскивание</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Шампунь</p>
+              </article>
+              <article class="flex justify-start my-2">
+                <img src="https://static.tildacdn.com/tild3531-6132-4864-a635-623533663639/Frame_47.svg" alt="">
+                <p class="ml-4">Смыв водой</p>
+              </article>
+              <article class="flex justify-start opacity-50 my-2">
+                <img src="https://static.tildacdn.com/tild3061-3432-4637-b630-373932346562/Frame_46.svg" alt="">
+                <p class="ml-4 text-[#66727f]">Обдув</p>
+              </article>
+            </div>
+            <div class="flex text-center items-center justify-center mt-6 text-nowrap">
+              <p class="text-2xl">от <strong class="text-3xl">900 &#8381;</strong></p>
+              <article class="py-2 px-4 opacity-75 bg-red-500 flex flex-col text-white rounded-md ml-4 text-start">
+                <p>🔥 940 &#8381;</p>
+                <p class="text-xs">с 00:00 до 06:00</p>
+              </article>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- скрипты -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script> 
+
+  <script>
+    var swiper = new Swiper(".cube-slider", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      initialSlide: 2,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay: {
+        delay: 2000, 
+        disableOnInteraction: false,
+      },
+      loop: true, 
+    });
+  </script>
+
+</body>
+</html>
